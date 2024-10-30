@@ -1,0 +1,189 @@
+{
+  "Basic HTML template": {
+    "prefix": "html",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>${1:Document}</title>",
+      "     <link rel=\"icon\"  href=\"#\"  />",
+      "    <link rel=\"stylesheet\" href=\"${2:style.css}\">",
+      "</head>",
+      "<body>",
+      "    ${3:}",
+      "</body>",
+      "</html>"
+    ],
+    "description": "Basic HTML template with CSS link"
+  },
+  "HTML form": {
+    "prefix": "form",
+    "body": [
+      "<form action=\"${1:/url}\" method=\"${2:post}\">",
+      "    <input type=\"text\" id=\"\" name=\"\" required>",
+      "    <button type=\"submit\">Submit</button>",
+      "</form>"
+    ],
+    "description": "html form with submit"
+  },
+  "input number": {
+    "prefix": "input:number",
+    "body": ["<input type=\"number\" id=\"\" name=\"\" required>"],
+    "description": "input type number"
+  },
+  "input text": {
+    "prefix": "input:text",
+    "body": ["<input type=\"text\" id=\"\" name=\"\" required>"],
+    "description": "input type text"
+  },
+  "input password": {
+    "prefix": "input:password",
+    "body": ["<input type=\"password\" id=\"\" name=\"\" required>"],
+    "description": "input type password"
+  },
+  "input email": {
+    "prefix": "input:email",
+    "body": ["<input type=\"email\" id=\"\" name=\"\" required>"],
+    "description": "input type email"
+  },
+  "input date": {
+    "prefix": "input:date",
+    "body": ["<input type=\"date\" id=\"\" name=\"\" required>"],
+    "description": "input type date"
+  },
+  "button": {
+    "prefix": "button",
+    "body": ["<button> ${1:} </button>"],
+    "description": "create default button"
+  },
+  "HTML div": {
+    "prefix": "div",
+    "body": ["<div>", "    ${1:Content}", "</div>"],
+    "description": "HTML div tag"
+  },
+  "class div": {
+    "prefix": "class",
+    "body": ["<div class=\"${1:class}\">", "    ${2:content}", "</div>"],
+    "description": "Create a div with a dynamic class"
+  },
+  "id div": {
+    "prefix": "id",
+    "body": ["<div id=\"${1:id}\">", "    ${2:content}", "</div>"],
+    "description": "Create a div with a dynamic id"
+  },
+  "lorem": {
+    "prefix": "lorem",
+    "body": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ],
+    "description": "crea un parrafo de relleno"
+  },
+  "anchor": {
+    "prefix": "a",
+    "body": ["<a href=\"${1:#}\"></a>"],
+    "description": "create a empty anchor"
+  },
+  "br": {
+    "prefix": "br",
+    "body": ["<br>"],
+    "description": "create breakline html"
+  },
+  "p": {
+    "prefix": "p",
+    "body": ["<p>${1:}</p>"],
+    "description": "create p element"
+  },
+  "h1": {
+    "prefix": "h1",
+    "body": ["<h1>${1:}</h1>"],
+    "description": "create h1 element"
+  },
+  "h2": {
+    "prefix": "h2",
+    "body": ["<h2>${1:}</h2>"],
+    "description": "create h2 element"
+  },
+  "h3": {
+    "prefix": "h3",
+    "body": ["<h3>${1:}</h3>"],
+    "description": "create h3 element"
+  },
+  "h4": {
+    "prefix": "h4",
+    "body": ["<h4>${1:}</h4>"],
+    "description": "create h4 element"
+  },
+  "h5": {
+    "prefix": "h5",
+    "body": ["<h5>${1:}</h5>"],
+    "description": "create h5 element"
+  },
+  "h6": {
+    "prefix": "h6",
+    "body": ["<h6>${1:}</h6>"],
+    "description": "create h6 element"
+  },
+  "JavaScript Script": {
+    "prefix": "script",
+    "body": ["<script src=\"${1:script.js}\"></script>"],
+    "description": "Link a JavaScript file"
+  },
+  "Unordered List": {
+    "prefix": "ul",
+    "body": [
+      "<ul>",
+      "    <li>${1:Item 1}</li>",
+      "    <li>${2:Item 2}</li>",
+      "    <li>${3:Item 3}</li>",
+      "</ul>"
+    ],
+    "description": "Create an unordered list"
+  },
+  "Ordered List": {
+    "prefix": "ol",
+    "body": [
+      "<ol>",
+      "    <li>${1:Item 1}</li>",
+      "    <li>${2:Item 2}</li>",
+      "    <li>${3:Item 3}</li>",
+      "</ol>"
+    ],
+    "description": "Create an ordered list"
+  },
+  "Image": {
+    "prefix": "img",
+    "body": [
+      "<img src=\"${1:image.png}\" alt=\"${2:Description}\" width=\"${3:300}\" height=\"${4:200}\">"
+    ],
+    "description": "Create an image tag"
+  },
+  "Anchor with text": {
+    "prefix": "a:text",
+    "body": ["<a href=\"${1:#}\">${2:Link Text}</a>"],
+    "description": "Create a text link"
+  },
+  "Table": {
+    "prefix": "table",
+    "body": [
+      "<table>",
+      "    <thead>",
+      "        <tr>",
+      "            <th>${1:Header 1}</th>",
+      "            <th>${2:Header 2}</th>",
+      "            <th>${3:Header 3}</th>",
+      "        </tr>",
+      "    </thead>",
+      "    <tbody>",
+      "        <tr>",
+      "            <td>${4:Data 1}</td>",
+      "            <td>${5:Data 2}</td>",
+      "            <td>${6:Data 3}</td>",
+      "        </tr>",
+      "    </tbody>",
+      "</table>"
+    ],
+    "description": "Create a basic HTML table"
+  }
+}

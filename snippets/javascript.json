@@ -1,0 +1,168 @@
+{
+  "Log to the console": {
+    "prefix": "clg",
+    "body": ["console.log($1);", "$0"],
+    "description": "Log to the console"
+  },
+  "Log warning to console": {
+    "prefix": "cwr",
+    "body": ["console.warn($1);", "$0"],
+    "description": "Log warning to the console"
+  },
+  "Log error to console": {
+    "prefix": "cer",
+    "body": ["console.error($1);", "$0"],
+    "description": "Log error to the console"
+  },
+  "Throw Exception": {
+    "prefix": "throw",
+    "body": ["throw new Error(\"$1\");", "$0"],
+    "description": "Throw Exception"
+  },
+  "try & catch": {
+    "prefix": "try",
+    "body": ["  try{", "$1", "  } catch(error){", "   console.error()", " };"],
+    "description": "try&catch block"
+  },
+  "reactNative Component": {
+    "prefix": "rnc",
+    "body": [
+      "import React from 'react';",
+      "import { View, Text , StyleSheet } from 'react-native';",
+      "",
+      "export const $1 = () => {",
+      "    return (",
+      "        <View>",
+      "            <Text></Text>",
+      "        </View>",
+      "    );",
+      "};",
+      "",
+      "const styles = StyleSheet.create({",
+      "",
+      "});"
+    ],
+    "description": "react native functional component"
+  },
+  "reactComponent": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export const $1 = () => {",
+      "    return (",
+      "        <div>",
+      "           <p></p>",
+      "        </div>",
+      "    );",
+      "};"
+    ],
+    "description": "react functional component"
+  },
+  "lorem ": {
+    "prefix": "lorem",
+    "body": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    ],
+    "description": "crea un parrafo de relleno"
+  },
+  "express app": {
+    "prefix": "exps",
+    "body": [
+      "import express, { json } from \"express\";",
+      "import { fileURLToPath } from \"url\";",
+      "import path from \"path\";",
+      "",
+      "const __filename = fileURLToPath(import.meta.url);",
+      "const __dirname = path.dirname(__filename);",
+      "",
+      "const app = express();",
+      "const PORT = 3000;",
+      "",
+      "// Set app",
+      "app.use(express.static(path.join(__dirname, 'public')));",
+      "app.use(json());",
+      "app.use(express.urlencoded({ extended: true }));",
+      "",
+      "// Import or create routes",
+      "$1",
+      "",
+      "app.listen(PORT, () => {",
+      "  console.log(`Server running on port `, PORT);",
+      "});",
+      "export default app;"
+    ],
+    "description": "create a base express app"
+  },
+  "router express": {
+    "prefix": "rexp",
+    "body": [
+      "import { Router } from \"express\";",
+      "",
+      "      const router = Router();",
+      "",
+      "      router.get(\"/\", (req, res) => {",
+      "        return;",
+      "      });",
+      "",
+      "      export default router;"
+    ],
+    "description": "create base express router"
+  },
+
+  "HTML div": {
+    "prefix": "div",
+    "body": ["<div>", "    ${1:Content}", "</div>"],
+    "description": "HTML div tag"
+  },
+  "class div": {
+    "prefix": "class",
+    "body": ["<div class=\"${1:class}\">", "    ${2:content}", "</div>"],
+    "description": "Create a div with a dynamic class"
+  },
+  "id div": {
+    "prefix": "id",
+    "body": ["<div id=\"${1:id}\">", "    ${2:content}", "</div>"],
+    "description": "Create a div with a dynamic id"
+  },
+  "anchor": {
+    "prefix": "a",
+    "body": ["<a href=\"${1:#}\"></a>"],
+    "description": "create a empty anchor"
+  },
+  "p": {
+    "prefix": "p",
+    "body": ["<p>${1:}</p>"],
+    "description": "create p element"
+  },
+  "h1": {
+    "prefix": "h",
+    "body": ["<h1>${1:}</h1>"],
+    "description": "create h1 element"
+  },
+  "h2": {
+    "prefix": "h",
+    "body": ["<h2>${1:}</h2>"],
+    "description": "create h2 p element"
+  },
+  "h3": {
+    "prefix": "h",
+    "body": ["<h3>${1:}</h3>"],
+    "description": "create h3 p element"
+  },
+  "h4": {
+    "prefix": "h",
+    "body": ["<h4>${1:}</h4>"],
+    "description": "create h4 element"
+  },
+  "h5": {
+    "prefix": "h",
+    "body": ["<h5>${1:}</h5>"],
+    "description": "create h5 element"
+  },
+  "h6": {
+    "prefix": "h",
+    "body": ["<h6>${1:}</h6>"],
+    "description": "create h6 element"
+  }
+}
